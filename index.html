@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Task manager</title>
+</head>
+<body>
+   <div class="main-container">
+
+    <!-- sidebar container -->
+    <div class="sidebar-container">
+
+        <!-- logo container -->
+        <a href="#" class="logo-container">
+            <img src="Assets/logo.svg" alt="logo">
+        </a>
+
+        <!-- sidebar Search sectio -->
+        <div class="input-container">
+            <span class="material-symbols-outlined"> search </span>
+            <input type="search" placeholder="Search" name="search" />
+            <div class="shortcut">
+                <span class="material-symbols-outlined">keyboard_command_key</span>
+                <p>F</p>
+            </div>
+        </div>
+
+        <!-- sidebar menu section -->
+
+        <div class="sidebar-menu-section">
+
+            <!-- main menu container -->
+            <div class="main-menu-container">
+                <div class="main-menu-text">
+                    <p>MAIN MENU</p>
+                </div>
+
+                <!-- Home item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> home </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Home</p>
+                    </div>
+                </div>
+
+                <!-- Projects item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> folder_open </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Projects</p>
+                    </div>
+                </div>
+
+                <!-- Calender item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> calendar_today </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Calender</p>
+                    </div>
+                </div>
+
+                <!-- Team member item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> person </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Team member</p>
+                    </div>
+                </div>
+
+                <!-- Analytics item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined">signal_cellular_alt</span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Analytics</p>
+                    </div>
+                </div>
+
+                <!-- Wallets item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined">account_balance_wallet</span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Wallets</p>
+                    </div>
+                </div>
+                <!-- Tasks item -->
+                <div class="main-menu-item active">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> task </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Tasks</p>
+                    </div>
+                </div>
+                <!-- Mail item -->
+                <div class="main-menu-item">
+                    <div class="menu-icon">
+                        <span class="material-symbols-outlined"> mail </span>
+                    </div>
+                    <div class="menu-tex">
+                        <p>Mail</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- label main container -->
+            <div class="label-main-container">
+                <div class="main-menu-text">
+                    <p>LABEL</p>
+                </div>
+
+                <!-- marketing lable -->
+                <div class="main-menu-item">
+                    <div class="label-icon-marketing">
+                    </div>
+                    <div class="menu-tex">
+                        <p>Marketing</p>
+                    </div>
+                </div>
+
+                <!-- Development lable -->
+                <div class="main-menu-item">
+                    <div class="label-icon-dev">
+                    </div>
+                    <div class="menu-tex">
+                        <p>Development</p>
+                    </div>
+                </div>
+                <!-- Design lable -->
+                <div class="main-menu-item">
+                    <div class="label-icon-design">
+                    </div>
+                    <div class="menu-tex">
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <!-- 3D modeling lable -->
+                <div class="main-menu-item">
+                    <div class="label-icon-3d">
+                    </div>
+                    <div class="menu-tex">
+                        <p>3D modeling</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- content container -->
+    <div class="content-container">
+
+        <!-- content header -->
+
+        <div class="content-header-container">
+            <div class="left-header-container">
+                <h1>Tasks</h1>
+            </div>
+            <div class="right-header-content">
+                <div class="add-btn-container">
+                    <button> <span class="material-symbols-outlined">add</span> Add Task </button>
+                </div>
+                <div class="bell-icon-container">
+                    <span class="material-symbols-outlined">notifications</span>
+                </div>
+                <div class="user-avatar">
+                    <img class="avatar" src="/Assets/user avatar.jpg" alt="profile pictures">
+                </div>
+            </div>
+        </div>
+
+        <!-- nain-content-container -->
+
+        <div class="main-content-container">
+            <!-- content tabs -->
+            <div class="content-tabs">
+                <!-- left tab -->
+                <div class="left-tab">
+
+                    <!-- board tab -->
+                    <div class="tab-icon-container board">
+                        <div class="tab-icon">
+                            <span class="material-symbols-outlined">keyboard_full</span>
+                        </div>
+                        <div class="tab-text">
+                            <p>Board</p>
+                        </div>
+                    </div>
+
+                    <!-- Table tab -->
+                    <div class="tab-icon-container">
+                        <div class="tab-icon">
+                            <span class="material-symbols-outlined">table_chart</span>
+                        </div>
+                        <div class="tab-text">
+                            <p>Table</p>
+                        </div>
+                    </div>
+
+                    <!-- calendar tab -->
+                    <div class="tab-icon-container">
+                        <div class="tab-icon">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                        </div>
+                        <div class="tab-text">
+                            <p>Calendar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right tab -->
+
+                <div class="right-tab">
+
+                    <!-- filter -->
+                    <div class="tab-icon-container">
+                        <div class="tab-icon">
+                            <span class="material-symbols-outlined">filter_alt</span>
+                        </div>
+                        <div class="tab-text">
+                            <p>Filter</p>
+                        </div>
+                    </div>
+
+                    <!-- sort -->
+                    <div class="tab-icon-container">
+                        <div class="tab-icon">
+                            <span class="material-symbols-outlined">swap_vert</span>
+                        </div>
+                        <div class="tab-text">
+                            <p>Sort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content wrapper -->
+            <div class="content-wrapper">
+                <!-- to do container -->
+                <div class="to-do-container">
+                    <!-- to do header -->
+                    <div class="to-do-header">
+                        <div class="to-do-text">
+                            <h3>To-Do</h3>
+                        </div>
+                        <div class="add-btn">
+                            <span class="material-symbols-outlined"> add</span>
+                        </div>
+                    </div>
+
+                    <!-- to do card -->
+
+                    <div class="to-do-card-container with-image">
+                        <div class="card-header">
+                            <div class="card-label">
+                                <p>DESIGN</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>Customer Journey Mapping</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Kidszone</p>
+                                </div>
+                            </div>
+
+                            <div class="card-task-info">
+                                <div class="task-level">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>25th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member1">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar3.jpg" alt="" class="member2">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>16</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="to-do-card-container ">
+                        <div class="card-header">
+                            <div class="card-label">
+                                <p>DESIGN</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>UI Component Modification</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Bookly</p>
+                                </div>
+                            </div>
+                            <div class="short-task-description">
+                                <p>Micro interactions, Loading and Progress</p>
+                            </div>
+                            <div class="card-task-info">
+                                <div class="task-level">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>25th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member2">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar3.jpg" alt="" class="member3">
+                                    </div>
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>16</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- in progress container -->
+                <div class="to-do-container">
+                    <!-- to do header -->
+                    <div class="inprogress-header">
+                        <div class="to-do-text">
+                            <h3>In Progress</h3>
+                        </div>
+                        <div class="add-btn">
+                            <span class="material-symbols-outlined"> add</span>
+                        </div>
+                    </div>
+
+                    <!-- to do card -->
+
+                    <div class="to-do-card-container ">
+                        <div class="card-header">
+                            <div class="card-label for-inprogress">
+                                <p>DEVELOPMENT</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>Database Customization</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Uber</p>
+                                </div>
+                            </div>
+                            <div class="short-task-description">
+                                <p>Customizing the database for Uber's internal system, focusing on micro-interactions.</p>
+                            </div>
+                            <div class="card-task-info">
+                                <div class="task-level">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>25th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member2">
+                                    </div>
+                                    <!-- <div class="member">
+                                        <img src="Assets/avatar3.jpg" alt="" class="member3">
+                                    </div> -->
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>10</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="to-do-card-container ">
+                        <div class="card-header">
+                            <div class="card-label for-3d">
+                                <p>3D MODELING</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>Fix Interior Planning</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Hotel Nice</p>
+                                </div>
+                            </div>
+                            <div class="short-task-description">
+                                <p>Addressing layout and functional issues in the 3D modeling of interior spaces.</p>
+                            </div>
+                            <div class="card-task-info">
+                                <div class="task-level low">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>Low</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>13th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member3">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar3.jpg" alt="" class="member2">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>13</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>09</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Done container -->
+                <div class="to-do-container">
+                    <!-- to do header -->
+                    <div class="done-header">
+                        <div class="to-do-text">
+                            <h3>To-Do</h3>
+                        </div>
+                        <div class="add-btn">
+                            <span class="material-symbols-outlined"> add</span>
+                        </div>
+                    </div>
+
+                    <!-- to do card -->
+
+                    <div class="to-do-card-container ">
+                        <div class="card-header">
+                            <div class="card-label">
+                                <p>DESIGN</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>Redesign Wordpress Website</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Design Lab</p>
+                                </div>
+                            </div>
+                            <div class="short-task-description">
+                                <p>Redesigning the website for Design Lab to enhance usability and visual appeal</p>
+                            </div>
+                            <div class="card-task-info">
+                                <div class="task-level high">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>High</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>17th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member2">
+                                    </div>
+                                    <div class="member">
+                                        <img src="Assets/avatar3.jpg" alt="" class="member3">
+                                    </div>
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>02</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="to-do-card-container ">
+                        <div class="card-header">
+                            <div class="card-label for-marketing">
+                                <p>MARKETING</p>
+                            </div>
+                            <div class="action-btn">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="card-details">
+                            <div class="card-title-container">
+                                <div class="card-task-title">
+                                    <h2>Facebook Ads Campaign</h2>
+                                </div>
+                                <div class="card-task-client">
+                                    <p>Plantify</p>
+                                </div>
+                            </div>
+                            <div class="short-task-description">
+                                <p>Micro interactions, Loading and Progress</p>
+                            </div>
+                            <div class="card-task-info">
+                                <div class="task-level">
+                                    <div class="level-icon">
+                                        <span class="material-symbols-outlined">flag </span>
+                                    </div>
+                                    <div class="level-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                                <div class="task-date">
+                                    <div class="date-icon">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div class="date-text">
+                                        <p>20th October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-bottom-container">
+                                <div class="card-bottom-left">
+                                    <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member3">
+                                    </div>
+                                    <!-- <div class="member">
+                                        <img src="Assets/avatar2.jpg" alt="" class="member2">
+                                    </div> -->
+                                    <div class="member">
+                                        <img src="Assets/avatar4.jpg" alt="" class="member3">
+                                    </div>
+                                </div>
+
+                                <div class="card-bottom-right">
+                                    <div class="links-container">
+                                        <div class="link-icon">
+                                            <span class="material-symbols-outlined">link</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>03</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-container">
+                                        <div class="comment-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div class="link-text">
+                                            <p>17</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
